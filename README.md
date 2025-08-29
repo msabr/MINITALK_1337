@@ -1,5 +1,7 @@
-# minitalk
-
+# minitalk - 42 Network
+<div align="center">
+<img src="minitalk.png"/>
+</div>
 A simple client-server communication program using UNIX signals.
 
 ## 📋 Project Overview
@@ -18,7 +20,7 @@ Minitalk is a 42 school project that implements a simple communication system be
 
 ```bash
 # Clone the repository
-git clone [your-repo-url] minitalk
+git clone https://github.com/msabr/MINITALK_1337 minitalk
 cd minitalk
 
 # Compile the project
@@ -49,7 +51,6 @@ Waiting for messages...
 
 # Terminal 2
 ./client 12345 "Hello, 42!"
-Message sent successfully!
 
 # Back to Terminal 1
 Received: Hello, 42!
@@ -68,11 +69,19 @@ Received: Hello, 42!
 ```
 minitalk/
 ├── Makefile
-├── README.md
-├── server.c          # Server implementation
-├── client.c          # Client implementation
-├── minitalk.h        # Header file
-└── libft/            # Your libft library (if used)
+├── bonus
+│   ├── client_bonus.c
+│   ├── ft_minitalk_bonus.h
+│   ├── minilib_bonus.c
+│   └── server_bonus.c
+├── mandatory
+│   ├── client.c
+│   ├── ft_minitalk.h
+│   ├── minilib.c
+│   └── server.c
+└── minitalk.png
+
+3 directories, 12 files
 ```
 
 ## 🎯 42 Project Requirements
@@ -114,11 +123,3 @@ The project includes a Makefile with the following rules:
 - Bit manipulation
 - Process identification (PID)
 - Asynchronous programming
-
-## 🏆 Grade
-
-This project is part of the 42 cursus and is designed to earn **100/100** points when all requirements are met.
-
----
-
-*Made with ❤️ at 42*
